@@ -80,12 +80,22 @@ member_casual - membership type of the rider.
    
 2. Checking for duplicate values. Checking for duplicates is performed on ride_id column as it is the primary key.
    <p align="center">
-       <img width="182" height="104" alt="image" src="https://github.com/user-attachments/assets/b03e90a7-e93e-4e02-ab34-fc97eee26ae8" />
+       <img width="259" height="75" alt="image" src="https://github.com/user-attachments/assets/81434789-220f-4155-8dd2-6e8615d8140a" />
+   </p>
+
+   Upon checking, a total of 5,414,305 (49.37%) rows are found to have duplicate values for ride_id. This is too many data for us to just omit.
+
+   For further investigation, we have to check if the duplicated values of ride_id have different values on other columns or just the ride_id
+   <p align="center">
+     <img width="1485" height="297" alt="image" src="https://github.com/user-attachments/assets/496e9999-b3a5-4b51-ab95-fd1b31f19d40" />
+   </p>
+   <p align="center">
+     <img width="1486" height="308" alt="image" src="https://github.com/user-attachments/assets/490921da-b995-4cd0-b8da-0c116675fa25" />
    </p>
    
-   Since the resulting count is equal to the number of rows, therefore, there are no duplicate values for ride_id.
-  
-3.  Checking for ambiguity in ride_id
+   These show that the entries with duplicate values for ride_id is actually a duplicate data and needs to be removed for proper analysis. 
+    
+4.  Checking for ambiguity in ride_id
    <p align="center">
      <img width="332" height="129" alt="image" src="https://github.com/user-attachments/assets/2477e1be-c2d5-4523-8cfa-5a9df3c9a115" />
    </p>
@@ -101,15 +111,16 @@ member_casual - membership type of the rider.
 5. Adding ride_length column to show duration of every ride by subtracting ended_at by started_at:
 <p align="center">
    <img width="1825" height="172" alt="image" src="https://github.com/user-attachments/assets/9e9188a6-0229-4dec-913c-d6f2f716bd90" />
-
+</p>
 
 Upon checking the added ride_length column, there are ambiguous values such as negative values and values exceed 24 hours. 
 
 ## Data Cleaning
 1. Removed entries with null values
-2. Removed ride_length with less than 1 minute and more than 24 hours.
-3. Added ride_lenth, day_of_week, and month columns
-4. A total of 3,748,445 rows was removed and 7,217,952 rows remained
+2. Removed duplicate rows
+3. Removed ride_length with less than 1 minute and more than 24 hours.
+4. Added ride_lenth, day_of_week, and month columns
+5. A total of 3,748,445 rows was removed and 7,217,952 rows remained
    
 <p align="center">
 <img width="1989" height="399" alt="image" src="https://github.com/user-attachments/assets/4426634e-95e0-49ac-b763-b1a0946c2d2e" />
@@ -129,9 +140,13 @@ Upon checking the added ride_length column, there are ambiguous values such as n
   <img width="647" height="509" alt="image" src="https://github.com/user-attachments/assets/8b03dfb9-eefd-4203-93f6-08c490ff6af9" />
 </p>
 
+Month:
+Day of Week:
+Hour of Day:
 
+- Average ride duration by month, day of week and hours
 
-
+  
 
 
 
