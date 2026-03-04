@@ -156,8 +156,8 @@ Average ride duration by month:
 ```SQL
   SELECT 		
 		month,	
-		AVG (ride_length) FILTER (WHERE member_casual = 'member') AS member_count,		
-		AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS casual_count	
+		AVG (ride_length) FILTER (WHERE member_casual = 'member') AS avg_member_ride_duration,		
+		AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS avg_casual_ride_duration	
 	FROM combined_trip_cleaned
 	GROUP BY month
 	ORDER BY 	
@@ -182,8 +182,8 @@ Average ride duration by day:
 ```SQL
 SELECT 
 	day_of_week,
-	AVG (ride_length) FILTER (WHERE member_casual = 'member') AS member_count,		
-  AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS casual_count	
+		AVG (ride_length) FILTER (WHERE member_casual = 'member') AS avg_member_ride_duration,		
+		AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS avg_casual_ride_duration	
 FROM combined_trip_cleaned
 GROUP BY day_of_week
 ORDER BY    
@@ -203,8 +203,8 @@ Average ride duration by hour:
 ```SQL
 SELECT 
 	EXTRACT (HOUR FROM started_at) AS hour_of_day,
-	AVG (ride_length) FILTER (WHERE member_casual = 'member') AS member_count,		
-  AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS casual_count	
+	AVG (ride_length) FILTER (WHERE member_casual = 'member') AS avg_member_ride_duration,		
+	AVG (ride_length) FILTER (WHERE member_casual = 'casual') AS avg_casual_ride_duration
 FROM combined_trip_cleaned
 GROUP BY hour_of_day
 ORDER BY hour_of_day
