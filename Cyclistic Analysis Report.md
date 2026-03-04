@@ -120,35 +120,56 @@ Upon checking the added ride_length column, there are ambiguous values such as n
 2. Removed duplicate rows
 3. Removed ride_length with less than 1 minute and more than 24 hours.
 4. Added ride_lenth, day_of_week, and month columns
-5. A total of 3,748,445 rows was removed and 7,217,952 rows remained
+5. A total of 7,309,353 rows was removed.
    
 <p align="center">
-<img width="1989" height="399" alt="image" src="https://github.com/user-attachments/assets/4426634e-95e0-49ac-b763-b1a0946c2d2e" />
+<img width="2011" height="397" alt="image" src="https://github.com/user-attachments/assets/659f9255-d28d-4c65-80da-4776c287de08" />
 </p>
 
 ## Analysis
 
+Going back to the question that is assigned to us by the Director of Marketing Department. _How do annual members and casual riders use Cyclistic bikes differently?_
+
+
+To give us insights how casual riders use Cyclistic differently with members, we need to see the number of riders with membership and the casual riders. We will also check their respective usage count and average duration of usage per month, day of week and by hour of the day.
+Finalyy, we need to check which start and end stations are mostly used by members and casual riders to see which places they frequently go in. 
+
 - Ride count by number of members and casual riders
 <p align="center">
-  <img width="647" height="509" alt="image" src="https://github.com/user-attachments/assets/ce59a4d7-db40-411f-9031-5624dd338825" />
+  <img width="819" height="658" alt="image" src="https://github.com/user-attachments/assets/0de06a05-631a-40c1-8ee2-31f58ff4f6ad" />
 </p>
 
-  From this data, the majority of riders using Cyclistic are those with memberships as it comprises 63.94% of the users.
+  From this data, the majority of riders using Cyclistic are those with memberships as it comprises 63.94% of the users and almost twice as many as casual riders. 
 
 - Ride count by month, day of week and hours
 <p align="center">
-  <img width="647" height="509" alt="image" src="https://github.com/user-attachments/assets/8b03dfb9-eefd-4203-93f6-08c490ff6af9" />
+  <img width="820" height="658" alt="image" src="https://github.com/user-attachments/assets/52643791-1cc6-4b6f-ad12-7271fdfdff86" />
 </p>
 
-Month:
-Day of Week:
-Hour of Day:
+  __Month:__ For riders with membership, a steady increase can be seen from January to June and peaking at August. Although casual riders are smaller in count compared to members, the same can be observed in the ride count through the months and peaking also at the month of August. One factor that could affect this is the season and weather during these months. Summer and Fall are in the months of June to November that is why this is when the ride count peaked, when the weather is just right for riding a bike. While the months of January and December are with the lowest ride count as this is winter season in Chicago. Aside from the cold, the streets are slippery and may pose a threat to safety if bicycles are still used for travel.  
+  __Day of Week:__ 
+  __Hour of Day:__
 
 - Average ride duration by month, day of week and hours
+  <p align="center">
+    <img width="994" height="795" alt="image" src="https://github.com/user-attachments/assets/cb7e7e9e-e413-47da-bf35-d58970081a18" />
+  </p>
 
+  Month:
+  Day of Week:
+  Hour of Day:
+
+- Mostly used Starting Station
+  <p align="center">
+    <img width="822" height="658" alt="image" src="https://github.com/user-attachments/assets/4e9aa085-dae4-42bc-ae9d-c3c8b65a265c" />
+  </p> 
   
 
 
+- Mostly used End Stations
+   <p align="center">
+    <img width="817" height="658" alt="image" src="https://github.com/user-attachments/assets/8ed76cf1-abe9-432e-8c9e-804199e910a8" />
+   </p> 
 
 
 
