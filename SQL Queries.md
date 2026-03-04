@@ -51,9 +51,18 @@ FROM combined_trip;
 Checking for duplicate values on primary key:
 
 ```SQL
-SELECT 	
-	DISTINCT COUNT (*) ride_id
+SELECT 		
+	COUNT (ride_id) AS ride_id_count,
+	COUNT (DISTINCT ride_id) AS ride_id_count_disctnct
 FROM combined_trip;
+```
+
+Checking for values of other columns with duplicate ride_id
+
+```SQL
+SELECT *
+FROM combined_trip
+ORDER BY ride_id
 ```
 
 Checking for ambiguity of primary key:
