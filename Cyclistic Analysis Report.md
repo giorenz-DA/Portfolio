@@ -147,29 +147,108 @@ Finalyy, we need to check which start and end stations are mostly used by member
 </p>
 
   __Month:__ For riders with membership, a steady increase can be seen from January to June and peaking at August. Although casual riders are smaller in count compared to members, the same can be observed in the ride count through the months and peaking also at the month of August. One factor that could affect this is the season and weather during these months. Summer and Fall are in the months of June to November that is why this is when the ride count peaked, when the weather is just right for riding a bike. While the months of January and December are with the lowest ride count as this is winter season in Chicago. Aside from the cold, the streets are slippery and may pose a threat to safety if bicycles are still used for travel.  
-  __Day of Week:__ 
-  __Hour of Day:__
+  
+  __Day of Week:__ A steady ride count during the weekdays and a decline during the weekends especially on Sundays. This could mean that members use Cyclistic for their daily commute to their work, school and other daily activities on weekdays. The casual riders also have a steady ride count during the weekdays until Wednesdays. There is a gradual increase increase on Thursdays to Saturdays peaking on Saturdays and then decreasing on Sundays. This could mean that casual riders use Cyclistic mainly for leisure purposes since the highest ride count is during Saturdays.  
+  
+  __Hour of Day:__ The highest ride count for members are during 8:00 AM and 5:00 PM. This supports our hypothesis that members use Cyclistic for daily commute as these hours are the most common times for clocking in and clocking out of work for employees and also when classes starts amd emds for students. For casual riders, a gradual increase from 7:00 AM to 5:00 PM, peaking at 5:00 PM, can be observed from the graph. They prefer using Cyclistic during the afternoon as this could be the best time to ride around tourist spots.  
+  
 
 - Average ride duration by month, day of week and hours
   <p align="center">
     <img width="994" height="795" alt="image" src="https://github.com/user-attachments/assets/cb7e7e9e-e413-47da-bf35-d58970081a18" />
   </p>
 
-  Month:
-  Day of Week:
-  Hour of Day:
+  __Month:__  Although ride count for members are higher than casual riders, casual riders tend to ride longer. For the Winter Months, the average ride duration are pretty much the same for members while for casual riders these are the months they tend to ride the shortest. The climate and temperature could be a factor why casual riders do not want to ride longer. From June to August are the months when casual riders spend longer riding bikes as these months are Summer season in Chicago.
+  
+  __Day of Week:__ Average ride duration for members during the week is nearly the same with very little movement. But for casual riders, aside from their count being the most in weekends, they also tend to ride the longest during these days. This supports our hypothesis from the ride count graph where casual riders mainly use Cyclistic for leisure purposes as riders that are sight seeing ride longer.
+  
+  __Hour of Day:__ The average ride duration for members are mostly the same at approximately 12 minutes. For casual riders, they ride the longest during 9:00 AM to 4:00 PM. These times are also the times when tourist spots mostly open so this also supports are hypothesis from before that casual riders use Cyclistic for leisure.  
+  
 
 - Mostly used Starting Station
+  
   <p align="center">
     <img width="822" height="658" alt="image" src="https://github.com/user-attachments/assets/4e9aa085-dae4-42bc-ae9d-c3c8b65a265c" />
   </p> 
-  
 
+  __Members:__ Members mostly start at streets where Business Districts are located. 
+
+Kingsbury St & Kinzie St:
+
+<p align="center">
+<img width="1173" height="659" alt="image" src="https://github.com/user-attachments/assets/aa49a385-1d29-49cb-a1c2-1fa89018dd4c" />
+</p> 
+
+Clinton St & Washington Blvd:
+
+<p align="center">
+<img width="1208" height="659" alt="image" src="https://github.com/user-attachments/assets/64b4f829-6a69-4a52-95c7-fc8d3d2c7dd1" />
+</p> 
+
+Wells St & Huron St:
+
+<p align="center">
+<img width="1183" height="659" alt="image" src="https://github.com/user-attachments/assets/92587b10-26f4-45f8-b46d-69ccab864e22" />
+</p>
+
+
+  __Casual Riders:__ Casual riders mostly start on stations with tourist spots in the vicinity like parks, piers, aquarium, etc. 
+
+
+DuSable Lake Shore Dr & Monroe St
+
+<p align="center">
+<img width="1173" height="660" alt="image" src="https://github.com/user-attachments/assets/6bb8c9c3-77d3-4c0e-9962-96f907eaae3c" />
+</p> 
+
+Michigan Ave & Oak St
+
+<p align="center">
+<img width="1172" height="659" alt="image" src="https://github.com/user-attachments/assets/15413942-7347-4310-9c34-a81bfd0b421c" />
+</p> 
+
+DuSable Lake Shore Dr & North Blvd
+
+<p align="center">
+<img width="1164" height="658" alt="image" src="https://github.com/user-attachments/assets/0ae78be5-6bf7-4abe-9727-c8bbf730864c" />
+</p> 
 
 - Mostly used End Stations
+  
    <p align="center">
     <img width="817" height="658" alt="image" src="https://github.com/user-attachments/assets/8ed76cf1-abe9-432e-8c9e-804199e910a8" />
    </p> 
+
+   __Members:__ The end stations mostly used by members are also the same as the starting stations which are in the vicinity of business establihments. This means that members mostly use Cyclistic for their commute going to and from their workplace.  
+  __Casual Riders:__ For casual riders, the end stations mostly used is also the same as the mostly used starting stations which are in the vicinity of tourist spots and leisure activities like parks, piers and aquariums. This concludes that casual riders mainly use Cyclistic for leisure purposes and sight-seeing.  
+
+
+Note: All of the visualizations used in this report can be accessed in Tableau Public titled [Google Analytics Capstone Project: Cyclistic](https://public.tableau.com/views/GoogleAnalyticsCapstoneProjectCyclistic/EndStation?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+## Key Insights
+
+Going back to the question assigned to us, _How do annual members and casual riders use Cyclistic bikes differently?_  
+To answer this, we performed analysis on how many annual members and casual riders aree there in the span of the last 12 months. We also analyzed their average ride duration and the mostly used starting and ending stations.
+
+1. Casual riders use Cyclistic bikes mainly for visiting tourist attractions and leisure activities while members use Cyclistic bikes mainly for commute.
+2. Casual riders prefer to use Cyclistic and ride longer during Fridays and weekends.
+3. Summer to Fall are the seasons where ride count increases for both member and casual riders.
+4. Casual riders prefer using Cyclistic when tourist or leisure spot opens.
+
+
+## Recomendations
+1. Implementing time-wise memberships such us Seasonal and Weekend Membership.
+2. A referral rewards system where if a casual rider was referred by a member, both will get rewards or discounts.
+3. A collaboration with local tourist spots where riders with membership can get rewards or discounts.
+
+
+
+
+
+
+
+
+
 
 
 
